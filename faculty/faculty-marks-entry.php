@@ -152,7 +152,7 @@
                 
               </div>
               <div class="card-body">
-                <form action="../php/add-marks.php" method="POST" id="marks-form" enctype='multipart/form-data'>
+                <form action="../php/add-mark-exam.php" method="POST" id="marks-form" enctype='multipart/form-data'>
                   <div class="row">
 
                   <div class="col-md-4 pr-1">
