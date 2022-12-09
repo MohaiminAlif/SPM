@@ -146,14 +146,167 @@
                 <h4>Course: ".$u['course_id']."</h4>
                 <h4>Section: ".$u['section']."</h4>
                 <h4>Semester: ".$u['semester']."</h4>
+                <h4>Category: ".$u['exam_name']."</h4>
                 <h4></h4>
-
 
                 
                 
                 ";
                 }
                 ?>
+
+<table class="table" id="datatable">
+                    <thead style="font-size: larger; color:blue">
+                    <th>
+                      Quesiton no.
+                    </th>
+                    <th>
+                      Marks
+                    </th>
+                    
+                    <th>
+                      Total
+                    </th>
+                    <th>
+                      CO
+                    </th>   
+                   
+                    </thead>
+                    <tbody>
+                      <?php        
+                        foreach($user as $u){  
+                             
+                            echo"
+                            <tr>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                            ".$u['q1_mark']."
+                            </td>
+                            <td>
+                            ".$u['q1_max']."
+                            </td>
+                            <td>
+                            ".$u['q1_co']."
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td>
+                            2
+                            </td>
+                            <td>
+                            ".$u['q2_mark']."
+                            </td>
+                            <td>
+                            ".$u['q2_max']."
+                            </td>
+                            <td>
+                            ".$u['q2_co']."
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td>
+                            3
+                            </td>
+                            <td>
+                            ".$u['q3_mark']."
+                            </td>
+                            <td>
+                            ".$u['q3_max']."
+                            </td>
+                            <td>
+                            ".$u['q3_co']."
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td>
+                            4
+                            </td>
+                            <td>
+                            ".$u['q4_mark']."
+                            </td>
+                            <td>
+                            ".$u['q4_max']."
+                            </td>
+                            <td>
+                            ".$u['q4_co']."
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td>
+                            5
+                            </td>
+                            <td>
+                            ".$u['q5_mark']."
+                            </td>
+                            <td>
+                            ".$u['q5_max']."
+                            </td>
+                            <td>
+                            ".$u['q5_co']."
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td>
+                            6
+                            </td>
+                            <td>
+                            ".$u['q6_mark']."
+                            </td>
+                            <td>
+                            ".$u['q6_max']."
+                            </td>
+                            <td>
+                            ".$u['q6_co']."
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td>
+                            7
+                            </td>
+                            <td>
+                            ".$u['q7_mark']."
+                            </td>
+                            <td>
+                            ".$u['q7_max']."
+                            </td>
+                            <td>
+                            ".$u['q7_co']."
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td>
+                            8
+                            </td>
+                            <td>
+                            ".$u['q8_mark']."
+                            </td>
+                            <td>
+                            ".$u['q8_max']."
+                            </td>
+                            <td>
+                            ".$u['q8_co']."
+                            </td>
+                            </tr>
+
+                            ";
+                            
+                        }
+                      ?>
+                    </tbody>
+                  </table>
+
+                
+
+
               </div>
 
 

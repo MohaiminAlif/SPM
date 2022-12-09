@@ -202,7 +202,7 @@
                             <td>
                             <a href='faculty-result-id-wise.php?q=".$u['sl']."'><button>Result</button></a>
                             </td>
-                            <tr>";
+                            </tr>";
                             
                         }
                       ?>
