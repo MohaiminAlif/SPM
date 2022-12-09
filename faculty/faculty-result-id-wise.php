@@ -7,20 +7,10 @@
 
   include '../php/include/conn.php';
 
+    $id=$_GET['q'];
+    $query = "SELECT * FROM marks_exam Where sl = $id";
+    $user = $conn->query($query);
     
-
-    if(isset($_GET['q']) && $_GET['q'] == 'final'){
-        $query = "SELECT * FROM marks_exam Where exam_name = 'final'";
-        $user = $conn->query($query);
-    }
-    else if(isset($_GET['q']) && $_GET['q'] == 'project'){
-        $query = "SELECT * FROM marks_exam Where exam_name = 'project'";
-        $user = $conn->query($query);
-    }
-    else{
-        $query = "SELECT * FROM marks_exam Where exam_name = 'mid'";
-        $user = $conn->query($query);
-    }
 
 ?>
 <!DOCTYPE html>
@@ -146,68 +136,31 @@
             <div class="card card-chart">
               <div class="card-header">
                 <!-- <h5 class="card-category">Submitted Marksheets by Faculties</h5> -->
-                <h4 class="card-title">Marks List</h4>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-round btn-outline-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
-                    <i class="now-ui-icons education_paper"></i>
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="faculty-results-show.php?q=mid">Mid-Term</a>
-                    <a class="dropdown-item" href="faculty-results-show.php?q=final">Finals</a>
-                    <a class="dropdown-item" href="faculty-results-show.php?q=project">Project</a>
-                  </div>
-                </div>
+                <h4 class="card-title"></h4>
+
+                <?php 
+                foreach($user as $u){  
+                echo "
+                
+                <h3>ID: ".$u['student_id']."</h3>
+                <h4>Course: ".$u['course_id']."</h4>
+                <h4>Section: ".$u['section']."</h4>
+                <h4>Semester: ".$u['semester']."</h4>
+                <h4></h4>
+
+
+                
+                
+                ";
+                }
+                ?>
               </div>
+
+
               <div class="card-body">
                 <div class="table-responsive">
-                  <table class="table" id="datatable">
-                    <thead style="font-size: larger; color:blue">
-                    <th>
-                      ID
-                    </th>
-                    <th>
-                      Exam
-                    </th>
-                    
-                    <th>
-                      Course
-                    </th>
-                    <th>
-                      Section
-                    </th>   
-                    <th>
-                      Semester
-                    </th>                    
-                    </thead>
-                    <tbody>
-                      <?php        
-                        foreach($user as $u){  
-                            // $x = .$u['student_id'];                    
-                            echo"<tr>
-                            <td>
-                            ".$u['student_id']."
-                            </td>
-                            <td>
-                            ".$u['exam_name']."
-                            </td>
-                            <td>
-                            ".$u['course_id']."
-                            </td>
-                            <td>
-                            ".$u['section']."
-                            </td>
-                            <td>
-                            ".$u['semester']."
-                            </td>
-                            <td>
-                            <a href='faculty-result-id-wise.php?q=".$u['sl']."'><button>Result</button></a>
-                            </td>
-                            <tr>";
-                            
-                        }
-                      ?>
-                    </tbody>
-                  </table>
+
+
                 </div>
               </div>
 
