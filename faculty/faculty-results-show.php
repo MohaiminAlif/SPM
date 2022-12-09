@@ -181,12 +181,11 @@
                     </thead>
                     <tbody>
                       <?php        
-                        foreach($user as $u){
-
-                          
+                        foreach($user as $u){  
+                            // $x = .$u['student_id'];                    
                             echo"<tr>
                             <td>
-                              ".$u['student_id']."
+                            ".$u['student_id']."
                             </td>
                             <td>
                             ".$u['exam_name']."
@@ -199,29 +198,24 @@
                             </td>
                             <td>
                             ".$u['semester']."
-                            </td>";
+                            </td>
+                            <td>
+                            <a href='faculty-results-show.php?q=".$u['student_id']."'><button>Result</button></a>
+                            </td>
+                            <tr>";
+                            
                         }
                       ?>
                     </tbody>
                   </table>
                 </div>
               </div>
-              <div class="card-footer">
-                
-              </div>
+
             </div>
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <div class=" container-fluid ">
-          <div class="copyright" id="copyright">
-            &copy; <script>
-              document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-            </script>, Designed by Group-4. Coded by Group-4</a>.
-          </div>
-        </div>
-      </footer>
+
     </div>
   </div>
   <!--   Core JS Files   -->
