@@ -76,12 +76,20 @@
           SPMS
         </a>
       </div>
+
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li class="active ">
             <a href="faculty-marks-entry.php">
               <i class="now-ui-icons design_app"></i>
               <p>Marks Entry</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="faculty-results-show.php">
+              <i class="now-ui-icons files_single-copy-04"></i>
+              <p>Show Marks</p>
             </a>
           </li>
 
@@ -114,7 +122,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Marks Entry</a>
+            <a class="navbar-brand" href="#">Marks Entry</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>

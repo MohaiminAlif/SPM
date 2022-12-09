@@ -63,6 +63,13 @@
           </li>
 
           <li>
+            <a href="faculty-results-show.php">
+              <i class="now-ui-icons files_single-copy-04"></i>
+              <p>Show Marks</p>
+            </a>
+          </li>
+
+          <li>
             <a href="avg-plo-achivement.php">
               <i class="now-ui-icons design_app"></i>
               <p>PLO Achivement</p>

@@ -111,6 +111,15 @@ chart.render();
               <p>Marks Entry</p>
             </a>
           </li>
+
+          <li>
+            <a href="faculty-results-show.php">
+              <i class="now-ui-icons files_single-copy-04"></i>
+              <p>Show Marks</p>
+            </a>
+          </li>
+
+
           <li class="active ">
             <a href="view-student-result.php">
               <i class="now-ui-icons design_app"></i>
