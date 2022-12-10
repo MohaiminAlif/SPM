@@ -57,7 +57,7 @@
 
 <body class="">
   <div class="wrapper ">
-  <div class="sidebar" data-color="orange">
+  <div class="sidebar" data-color="re">
       <div class="logo">
         <a href="#" class="simple-text logo-mini">
         
@@ -76,23 +76,23 @@
           </li>
 
 
-          <li class="active">
+          <li class="activ">
             <a href="faculty-results-show.php">
-              <i class="now-ui-icons files_single-copy-04"></i>
+              <i class="now-ui-icons business_chart-pie-36"></i>
               <p>Show Marks</p>
             </a>
           </li>
 
           <li>
             <a href="avg-plo-achivement.php">
-              <i class="now-ui-icons design_app"></i>
+              <i class="now-ui-icons education_hat"></i>
               <p>PLO Achivement</p>
             </a>
           </li>
 
           <li>
             <a href="faculty-feedback.php">
-              <i class="now-ui-icons education_atom"></i>
+              <i class="now-ui-icons files_single-copy-04"></i>
               <p>Admin Feedback</p>
             </a>
           </li>

@@ -2,7 +2,7 @@
 <?php
     include '../php/include/conn.php';
 
-    $course_Name = $_POST["course"];
+    // $course_Name = $_POST["course"];
 
     $query = "SELECT SUM(mark1) AS m1, SUM(mark2) AS m2,
               SUM(mark3) AS m3, SUM(mark4) AS m4 ,
@@ -94,7 +94,7 @@ chart.render();
 </head>
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="yellow">
+    <div class="sidebar">
       <div class="logo">
         <a href="#" class="simple-text logo-mini">
         
@@ -114,21 +114,21 @@ chart.render();
 
           <li>
             <a href="faculty-results-show.php">
-              <i class="now-ui-icons files_single-copy-04"></i>
+              <i class="now-ui-icons business_chart-pie-36"></i>
               <p>Show Marks</p>
             </a>
           </li>
 
 
-          <li class="active ">
-            <a href="view-student-result.php">
-              <i class="now-ui-icons design_app"></i>
+          <li>
+            <a href="avg-plo-achivement.php">
+              <i class="now-ui-icons education_hat"></i>
               <p>PLO Achivement</p>
             </a>
           </li>
-          <li class="">
+          <li>
               <a href="faculty-feedback.php">
-              <i class="now-ui-icons design_app"></i>
+              <i class="now-ui-icons files_single-copy-04"></i>
               <p>Admin Feedback</p>
             </a>
           </li>
