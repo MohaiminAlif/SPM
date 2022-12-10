@@ -146,7 +146,7 @@
             <div class="card card-chart">
               <div class="card-header">
                 <!-- <h5 class="card-category">Submitted Marksheets by Faculties</h5> -->
-                <h4 class="card-title">Marks List</h4>
+                <h4 class="card-title">Student List</h4>
                 <div class="dropdown">
                   <button type="button" class="btn btn-round btn-outline-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
                     <i class="now-ui-icons education_paper"></i>
