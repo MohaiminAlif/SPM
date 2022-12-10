@@ -177,7 +177,10 @@
                     </th>   
                     <th>
                       Semester
-                    </th>                    
+                    </th>
+                    <th>
+                      Marks
+                    </th>                     
                     </thead>
                     <tbody>
                       <?php        
@@ -200,7 +203,7 @@
                             ".$u['semester']."
                             </td>
                             <td>
-                            <a href='faculty-result-id-wise.php?q=".$u['sl']."'><button>Result</button></a>
+                            <a href='faculty-result-id-wise.php?q=".$u['sl']."'><button>Show</button></a>
                             </td>
                             </tr>";
                             
