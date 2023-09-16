@@ -62,7 +62,7 @@
  
         </a>
         <a href="#" class="simple-text logo-normal">
-          SPMS
+          SPMS v2.0
         </a>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
