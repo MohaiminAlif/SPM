@@ -60,7 +60,7 @@
     <div class="sidebar" data-color="yellow">
       <div class="logo">
         <a href="#" class="simple-text logo-mini">
-          STUDENT
+          STUDENT Info
         </a>
         <a href="#" class="simple-text logo-normal">
           SPMS
@@ -71,21 +71,21 @@
           <li class="active ">
             <a href="student-marksheet.php">
               <i class="now-ui-icons design_app"></i>
-              <p>Result</p>
+              <p>Results</p>
             </a>
           </li>
 
           <li class="">
             <a href="student-plo-marksheet.php">
               <i class="now-ui-icons design_app"></i>
-              <p>PLO Result</p>
+              <p>PLO Results</p>
             </a>
           </li>
 
           <li class="">
             <a href="course-wise.php">
               <i class="now-ui-icons design_app"></i>
-              <p>Course Wise Compare</p>
+              <p>Course Wise Compares</p>
             </a>
           </li>
 
